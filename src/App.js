@@ -10,10 +10,11 @@ import MealDemo from "./Components/carousel/Carousel";
 import { Routes, Route } from "react-router-dom";
 import Cards from "./Components/Card";
 import Footer from "./Components/footer/Footer";
-import AddProduct from "./Components/addProduct/AddProduct";
+import Signup from "./Components/Signup"
 import CardsDetails from "./Components/CardDetails";
 import { useDispatch } from "react-redux";
 import { fetchCardsData } from "./store/productSlice";
+import Login from "./Components/Login"
 
 // my api(fake json -server)--> https://my-json-server.typicode.com/priyach19/martJSON/mealsdata/db
 
@@ -31,8 +32,9 @@ function App() {
       <MealDemo />
       <Routes>
         <Route path="/" element={<Cards />} />
-        <Route path="/addproducts" element={<AddProduct />} />
+        <Route path="/createuser" element={<Signup/>}/>
         <Route path={`/productdetail`} element={<CardsDetails />} />
+        <Route path="/login" element={<Login/>}/>
       </Routes>
       <Footer />
     </div>

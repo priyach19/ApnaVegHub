@@ -42,10 +42,7 @@ const CardsDetails = (props) => {
                                   <p><strong>Rating :</strong> <Ratings value={viewItem.rating} /></p>
                                   <p><strong>Order Review :</strong> <span >{viewItem.somedata}</span></p>
                                   <p>☟</p>
-                                  <button className='
-                                  
-                                  
-                                  detailbtn bg-secondary' onClick={() => addCartHandle(viewItem)}>Add To Cart</button>
+                                  <button className='detailbtn bg-secondary' onClick={() => addCartHandle(viewItem)}>Add To Cart</button>
                               </td>
                           </tr>
                       </Table>

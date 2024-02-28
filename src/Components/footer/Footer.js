@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
     return (
         <footer>
-            <Link to="/" className='footer__logo'>APNA VEG HUB</Link>
+            <Link to="/" className='footer__logo'>MEAL HUB</Link>
             <div className="footer__socials">
                 <Link to="https://facebook.com/login " target='_blank' rel='noreferrer'><BsFacebook /></Link>
                 <Link to="https://instagram.com/login " target='_blank' rel='noreferrer'><GrInstagram /></Link>
@@ -19,7 +19,7 @@ const Footer = () => {
             </div>
 
             <div className="footer__copyright">
-                <small>&copy;Apna Veg Hub: All right reserved @2023.</small>
+                <small>&copy;Meal Hub: All right reserved @2023.</small>
             </div>
         </footer>
     )

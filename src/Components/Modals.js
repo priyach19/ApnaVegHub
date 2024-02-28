@@ -70,12 +70,11 @@ function OrderModal(props) {
                 <section className="container mt-1">
                   <div className="itemsdetails">
                     <div className="items__img">
-                      <img src={element.imgdata} alt="" />
+                      <img src={element.imgdata} height="300px" width="160px" alt="" />
                     </div>
 
                     {/* table for item description  */}
                     <div className="details">
-                    
                       <Table>
                         <tr>
                           <td style={{ color: "#033fff" }}>
@@ -95,11 +94,12 @@ function OrderModal(props) {
                             <p>
                               <strong>Rating :</strong> <Ratings value="3" />
                             </p>
+                            <div className="mt-2 d-flex justify-content-between">
                             <div
                               className="mt-2 d-flex justify-content-between align-items-center"
                               style={{
                                 width: 90,
-                                height: 30,
+                                height: 28,
                                 borderRadius: 40,
                                 cursor: "pointer",
                                 background: "#033fff",
@@ -107,39 +107,38 @@ function OrderModal(props) {
                               }}
                             >
                               <span
-                                style={{ fontSize: 24, color: "white" }}
+                                style={{ fontSize: 22, color: "white" }}
                                 onClick={() => decreaseCartItem(element)}
                               >
                                 −
                               </span>
-                              <span style={{ fontSize: 24, color: "white" }}>
+                              <span style={{ fontSize: 22, color: "white" }}>
                                 {element.qnty}
                               </span>
                               <span
-                                style={{ fontSize: 24, color: "white" }}
+                                style={{ fontSize: 22, color: "white" }}
                                 onClick={() => increaseCartItem(element)}
                               >
                                 +
                               </span>
+                             
                             </div>
-                            </td>
-                            </tr>
-                            <hr/>
-                           <tr>
-                            <p onClick={() => removeFromCartFn(element)}>
-                               <span>
+                            <div>
+                            <span onClick={() => removeFromCartFn(element)}>
                                 <MdDeleteForever
                                   className="fas fa-trash"
                                   style={{
                                     color: "red",
-                                    fontSize: 20,
+                                    fontSize: 30,
                                     cursor: "pointer",
                                   }}
                                 ></MdDeleteForever>{" "}
                               </span>
-                            </p>
+                            </div>
+                            </div>
+                            </td>
                             </tr>
-                        
+                                                    
                       </Table>
                     </div>
                   </div>

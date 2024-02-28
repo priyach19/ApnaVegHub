@@ -2,7 +2,7 @@ import { Rating } from '@mui/material'
 import React from 'react'
 
 const Ratings = ({ value }) => {
-    value = +value;
+    value =+value;
     return (
         // using material UI
         <Rating
